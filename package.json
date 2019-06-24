@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Christensen-Dustin/Prepare10/issues"
   },
-  "homepage": "https://github.com/Christensen-Dustin/Prepare10#readme"
+  "homepage": "https://github.com/Christensen-Dustin/Prepare10#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

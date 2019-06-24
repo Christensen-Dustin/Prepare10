@@ -4,6 +4,7 @@ const { Pool } = require('pg');
 const pool = new Pool({connectionString: connectionString});
 
 var sql = "SElECT * FROM accountEvent";
+var rows = '';
 
 pool.query(sql, function(err, result) {
     // If an error occurred....

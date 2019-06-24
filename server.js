@@ -3,7 +3,7 @@ const connectionString = process.env.DATABASE_URL || "postgres://mboyxxguszqiuc:
 const { Pool } = require('pg');
 const pool = new Pool({connectionString: connectionString});
 
-var sql = "SElECT * FROM accountEvent";
+var sql = "SELECT * FROM eventAccount";
 var rows = '';
 
 pool.query(sql, function(err, result) {

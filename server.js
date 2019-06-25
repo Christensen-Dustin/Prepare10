@@ -4,9 +4,79 @@ const { Pool } = require('pg');
 const pool = new Pool({connectionString: connectionString});
 
 var sql = "SELECT * FROM eventAccount";
+var sql2 = "SELECT * FROM eventEntry";
+var sql3 = "SELECT * FROM eventTheme";
+var sql4 = "SELECT * FROM eventNote";
+var sql5 = "SELECT * FROM eventThemeConnection";
+var sql6 = "SELECT * FROM eventNoteConnection";
 var rows = '';
 
 pool.query(sql, function(err, result) {
+    // If an error occurred....
+    if (err) {
+        console.log("Error in query: ")
+        console.log(err);
+    }
+    
+    // Log this to the console for debugging purposes.
+    console.log("Back from DB with results: ");
+    console.log(result.rows);
+    
+});
+
+pool.query(sql2, function(err, result) {
+    // If an error occurred....
+    if (err) {
+        console.log("Error in query: ")
+        console.log(err);
+    }
+    
+    // Log this to the console for debugging purposes.
+    console.log("Back from DB with results: ");
+    console.log(result.rows);
+    
+});
+
+pool.query(sql3, function(err, result) {
+    // If an error occurred....
+    if (err) {
+        console.log("Error in query: ")
+        console.log(err);
+    }
+    
+    // Log this to the console for debugging purposes.
+    console.log("Back from DB with results: ");
+    console.log(result.rows);
+    
+});
+
+pool.query(sql4, function(err, result) {
+    // If an error occurred....
+    if (err) {
+        console.log("Error in query: ")
+        console.log(err);
+    }
+    
+    // Log this to the console for debugging purposes.
+    console.log("Back from DB with results: ");
+    console.log(result.rows);
+    
+});
+
+pool.query(sql5, function(err, result) {
+    // If an error occurred....
+    if (err) {
+        console.log("Error in query: ")
+        console.log(err);
+    }
+    
+    // Log this to the console for debugging purposes.
+    console.log("Back from DB with results: ");
+    console.log(result.rows);
+    
+});
+
+pool.query(sql6, function(err, result) {
     // If an error occurred....
     if (err) {
         console.log("Error in query: ")
